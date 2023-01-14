@@ -22,7 +22,7 @@ module.exports = function toReadable (number) {
         let MatchedResults = ('0000000' + number.toString()).slice(-7).match(/(\d{1})(\d{1})(\d{2})(\d{1})(\d{2})/);
         // let MatchedResults = ('000' + number.toString()).slice(-3).match(/^(\d{1})(\d{2})$/);
 
-        console.log(MatchedResults[5]);
+        // console.log(MatchedResults[5]);
         
         let NumbersToWord = MatchedResults[4] != 0 ? (
             numbersToTwenty[Number(MatchedResults[4])] || `${tenth[Number(MatchedResults[4][1])]} ${numbersToTwenty[Number(MatchedResults[4][0])]}`
